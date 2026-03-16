@@ -1,172 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BloodOil | The Black Gold of Crypto</title>
+<title>BloodOil</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0b0b0b;
-color:white;
-text-align:center;
+height:100vh;
+overflow:hidden;
 }
 
-header{
-padding:80px 20px;
-background:linear-gradient(180deg,#000,#1a0000);
+/* Nuotrauka */
+
+.background{
+position:fixed;
+width:100%;
+height:100%;
+background:url("oil.jpg");
+background-size:cover;
+background-position:center;
+animation:zoom 30s infinite alternate;
 }
 
-h1{
-font-size:48px;
-color:#ff1a1a;
+/* Blood red overlay */
+
+.overlay{
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(
+rgba(120,0,0,0.6),
+rgba(0,0,0,0.9)
+);
 }
 
-h2{
-color:#ff1a1a;
-margin-top:60px;
-}
+/* zoom animacija */
 
-p{
-max-width:700px;
-margin:auto;
-line-height:1.6;
+@keyframes zoom{
+0%{
+transform:scale(1);
 }
-
-.button{
-margin-top:30px;
-display:inline-block;
-padding:14px 35px;
-background:#ff1a1a;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
+100%{
+transform:scale(1.15);
 }
-
-.section{
-padding:60px 20px;
-}
-
-.roadmap{
-max-width:800px;
-margin:auto;
-text-align:left;
-}
-
-.tokenomics{
-max-width:600px;
-margin:auto;
-}
-
-footer{
-padding:30px;
-background:#050505;
-margin-top:60px;
-}
-
-.social a{
-margin:0 10px;
-color:#ff1a1a;
-text-decoration:none;
-font-weight:bold;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-
-<h1>BloodOil</h1>
-
-<p>The Black Gold of Crypto</p>
-
-<p>
-Deep in the digital oil fields of the blockchain a new power was born.
-Not gold. Not Bitcoin.
-<strong>BloodOil.</strong>
-</p>
-
-<a class="button" href="#">Join the Movement</a>
-
-</header>
-
-
-<div class="section">
-
-<h2>Story</h2>
-
-<p>
-BloodOil represents the energy of the crypto community.
-Built on Solana, it fuels memes, hype and the next wave of decentralized culture.
-This is not just another memecoin. It is a movement powered by the community.
-</p>
-
-</div>
-
-
-<div class="section">
-
-<h2>Roadmap</h2>
-
-<div class="roadmap">
-
-<p><strong>Phase 1 – Foundation</strong></p>
-<p>Website launch, branding, social media creation, community building.</p>
-
-<p><strong>Phase 2 – Community</strong></p>
-<p>Memes, contests, marketing campaigns and growing the BloodOil movement.</p>
-
-<p><strong>Phase 3 – Launch</strong></p>
-<p>$BOIL token launch on Solana, liquidity setup and community rewards.</p>
-
-</div>
-
-</div>
-
-
-<div class="section">
-
-<h2>Tokenomics</h2>
-
-<div class="tokenomics">
-
-<p>Total Supply: 1,000,000,000 $BOIL</p>
-<p>40% Community</p>
-<p>40% Liquidity</p>
-<p>10% Marketing</p>
-<p>10% Team</p>
-
-</div>
-
-</div>
-
-
-<div class="section">
-
-<h2>Join The Community</h2>
-
-<div class="social">
-
-<a href="#">Twitter</a>
-<a href="#">Telegram</a>
-<a href="#">Discord</a>
-
-</div>
-
-</div>
-
-
-<footer>
-
-<p>© 2026 BloodOil</p>
-
-</footer>
+<div class="background"></div>
+<div class="overlay"></div>
 
 </body>
 </html>
