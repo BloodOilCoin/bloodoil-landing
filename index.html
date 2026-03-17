@@ -2,48 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BloodOil</title>
 
 <style>
 
 body{
 margin:0;
-height:100vh;
 overflow:hidden;
 }
 
-/* Nuotrauka */
+/* Fonas */
 
 .background{
 position:fixed;
+top:0;
+left:0;
 width:100%;
 height:100%;
-background:url("oil.jpg");
+
+/* SVARBIAUSIA DALIS */
+background-image:url('./bloodoil-bg.jpg');
+
 background-size:cover;
 background-position:center;
-animation:zoom 30s infinite alternate;
+background-repeat:no-repeat;
+
+/* animacija */
+animation:zoom 25s infinite alternate ease-in-out;
 }
 
-/* Blood red overlay */
-
-.overlay{
-position:fixed;
-width:100%;
-height:100%;
-background:linear-gradient(
-rgba(120,0,0,0.6),
-rgba(0,0,0,0.9)
-);
-}
-
-/* zoom animacija */
+/* judėjimas */
 
 @keyframes zoom{
 0%{
 transform:scale(1);
 }
 100%{
-transform:scale(1.15);
+transform:scale(1.1);
 }
 }
 
@@ -54,7 +50,6 @@ transform:scale(1.15);
 <body>
 
 <div class="background"></div>
-<div class="overlay"></div>
 
 </body>
 </html>
